@@ -1,6 +1,6 @@
 # requirements:
     - ffmpeg
-    - python
+    - rust
     - ascii-image-converter
     - badapple.mp4 clip in this dir
 
@@ -12,6 +12,7 @@ chmod +x convert.sh
 
 # Run:
 ```bash
-python badpy.py
+rustc bad.rs -o badapple
+./badapple
 
 ```
