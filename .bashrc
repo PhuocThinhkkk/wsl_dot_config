@@ -152,4 +152,3 @@ export PATH="$PATH:/mnt/c/Windows/System32"
 export PATH="$PATH:/home/thinhdz/.local/bin"
 eval "$(starship init bash)"
 export PATH=$PATH:$(go env GOPATH)/bin
-alias badapple='(cd ~/projects/stupiz/badapple && python3 badpy.py)'
