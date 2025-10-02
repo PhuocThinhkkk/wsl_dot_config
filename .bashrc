@@ -107,6 +107,19 @@ tmux() {
         command tmux "$@"
     fi
 }
+git() {
+    if [ "$1" = "st" ]; then
+        command git status
+    elif [ "$1" = "br" ]; then
+        command git branch
+    elif [ "$1" = "pullr" ]; then
+        command git pull --rebase
+    elif [ "$1" = "lgr" ]; then
+        command git log --oneline --graph
+    else
+        command git "$@"
+    fi
+}
 
 alias ..='cd ..'
 alias dev='bash $(find ~/devs -type f | fzf)'
@@ -152,3 +165,15 @@ export PATH="$PATH:/mnt/c/Windows/System32"
 export PATH="$PATH:/home/thinhdz/.local/bin"
 eval "$(starship init bash)"
 export PATH=$PATH:$(go env GOPATH)/bin
+alias run-doom='doom-ascii -iwad ~/projects/stupiz/doom1.wad -chars braille -wrap 1 1'
+alias run-doom-app='chocolate-doom -iwad ~/projects/stupiz/doom1.wad '
+
+fixgit() {
+    if [ $# -ne 2 ]; then
+        echo "Usage: recoruptgit <source> <destination>"
+        return 1
+    fi
+
+    rsync -av --progress "$1"/ "$2"/ --exclude='.git'
+}
+
