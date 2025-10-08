@@ -1,0 +1,149 @@
+@import "https://www.nerdfonts.com/assets/css/webfont.css";
+@import url("https://cdn.jsdelivr.net/npm/@catppuccin/palette/css/catppuccin.css");
+
+/* ========== Base ========== */
+html {
+  background: transparent;
+  backdrop-filter: none;
+  border: none;
+  box-shadow: none;
+
+}
+
+/* 👇 Forces Catppuccin Mocha mode */
+:root {
+  --ctp-flavor: "mocha";
+}
+
+html,
+body {
+  background: transparent;
+  backdrop-filter: none;
+  border: none;
+  box-shadow: none;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Fira Code", ui-monospace, monospace;
+  font-size: 12px;
+  color: var(--ctp-mocha-text);
+  background: transparent;
+  overflow: hidden;
+}
+
+/* --- Dark translucent background --- */
+#root {
+  height: 100%;
+  background: transparent;
+  backdrop-filter: none;
+  border: none;
+  box-shadow: none;
+  backdrop-filter: blur(10px) saturate(140%);
+  border-bottom: 1px solid rgba(var(--ctp-mocha-surface1-rgb), 0.4);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+/* ========== Layout ========== */
+.app {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  height: 100%;
+  padding: 6px 2vw;
+}
+
+/* Align content */
+.left,
+.center,
+.right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.center {
+  justify-content: center;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: var(--ctp-mocha-lavender);
+}
+
+.right {
+  justify-content: flex-end;
+}
+
+/* ========== Icon + Section Styling ========== */
+i {
+  font-size: 14px;
+  vertical-align: middle;
+  margin-right: 6px;
+  opacity: 0.9;
+  transition:
+    color 0.3s ease,
+    opacity 0.3s ease;
+}
+
+/* Icon colors */
+.logo i {
+  color: var(--ctp-mocha-blue);
+}
+.network i {
+  color: var(--ctp-mocha-sapphire);
+}
+.memory i {
+  color: var(--ctp-mocha-green);
+}
+.cpu i {
+  color: var(--ctp-mocha-peach);
+}
+.battery i {
+  color: var(--ctp-mocha-yellow);
+}
+.weather i {
+  color: var(--ctp-mocha-sky);
+}
+
+/* Section containers */
+.network,
+.memory,
+.cpu,
+.battery,
+.weather {
+  display: flex;
+  align-items: center;
+  color: rgba(var(--ctp-mocha-text-rgb), 0.95);
+  background: rgba(var(--ctp-mocha-surface0-rgb), 0.25);
+  padding: 4px 10px;
+  border-radius: 5px;
+  border: 4px solid rgba(var(--ctp-mocha-blue-rgb), 0.15);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover animation */
+.network:hover,
+.memory:hover,
+.cpu:hover,
+.battery:hover,
+.weather:hover {
+  background: rgba(var(--ctp-mocha-surface1-rgb), 0.4);
+  transform: translateY(-1px);
+  transition: all 0.15s ease;
+}
+
+/* ========== Details ========== */
+.cpu .high-usage {
+  color: var(--ctp-mocha-red);
+  font-weight: 700;
+}
+
+.battery {
+  position: relative;
+}
+
+.battery .charging-icon {
+  position: absolute;
+  font-size: 8px;
+  left: -6px;
+  top: 3px;
+  color: var(--ctp-mocha-teal);
+}

@@ -1,0 +1,6 @@
+[2m2025-10-07T14:13:44.408524Z[0m [31mERROR[0m [2mzebar::sys_tray[0m[2m:[0m Error handling menu event: HTML file not found at 'a/index.html' for config 'C:\Users\hp\.glzr\zebar\himom\zpack.json'.
+[2m2025-10-07T14:20:48.210714Z[0m [31mERROR[0m [2mzebar::sys_tray[0m[2m:[0m Error handling menu event: No widget named 'a' found in widget pack 'himom'.
+[2m2025-10-07T14:49:44.211772Z[0m [31mERROR[0m [2mzebar::sys_tray[0m[2m:[0m Error handling menu event: No widget named 'vanilla-clear' found in widget pack 'himom'.
+[2m2025-10-07T14:51:44.489660Z[0m [31mERROR[0m [2mzebar::sys_tray[0m[2m:[0m Error handling menu event: HTML file not found at 'per/index.html' for config 'C:\Users\hp\.glzr\zebar\himom\zpack.json'.
+[2m2025-10-07T15:03:19.209736Z[0m [31mERROR[0m [2mzebar::sys_tray[0m[2m:[0m Error handling menu event: HTML file not found at 'ping/ndex.html' for config 'C:\Users\hp\.glzr\zebar\himom\zpack.json'.
+[2m2025-10-08T01:22:39.564401Z[0m [31mERROR[0m [2mzebar[0m[2m:[0m HTML file not found at 'oping/index.html' for config 'C:\Users\hp\.glzr\zebar\himom\zpack.json'.
